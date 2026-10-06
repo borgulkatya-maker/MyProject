@@ -1,0 +1,16 @@
+{
+  "name": "task-01-html-css",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "start": "parcel ./src/pages/*.html",
+    "build": "parcel build ./src/pages/*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}

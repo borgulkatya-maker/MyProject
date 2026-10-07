@@ -129,96 +129,61 @@
 
 
     <main class="page">
-
         <section class="product-page">
             <div class="container">
-
-                <nav class="breadcrumbs" aria-label="Хлебные крошки">
-                    <a class="breadcrumbs__link" href="./index.html">
-                        Главная
-                    </a>
-
-                    <span class="breadcrumbs__separator">/</span>
-
-                    <a class="breadcrumbs__link" href="./catalog.html">
-                        Каталог
-                    </a>
-
-                    <span class="breadcrumbs__separator">/</span>
-
-                    <span class="breadcrumbs__current">
-                        Корм для кошек
-                    </span>
-                </nav>
-
 
                 <div class="product-page__content">
 
                     <div class="product-page__image-wrapper">
-
                         <img
                             class="product-page__image"
                             src="../assets/images/product-1.png"
-                            alt="Корм для кошек"
+                            alt="Корм для кошек Royal Canin"
                         >
-
                     </div>
 
 
                     <div class="product-page__info">
 
-                        <h1 class="product-page__title">
-                            Корм для кошек
-                        </h1>
+                        <div class="product-page__top">
+                            <h1 class="product-page__title">
+                                Корм фирмы 1, 1 кг
+                            </h1>
 
-                        <p class="product-page__price">
-                            1500 ₽
-                        </p>
-
-                        <p class="product-page__description">
-                            Полнорационный сухой корм для взрослых кошек.
-                            Подходит для ежедневного кормления и содержит
-                            необходимые питательные вещества для поддержания
-                            здоровья и активности питомца.
-                        </p>
+                            <p class="product-page__price">
+                                1000 руб.
+                            </p>
+                        </div>
 
 
-                        <dl class="product-page__properties">
+                        <div class="product-page__description-block">
 
-                            <div class="product-page__property">
-                                <dt class="product-page__property-name">
-                                    Вес
-                                </dt>
+                            <h2 class="product-page__subtitle">
+                                Описание
+                            </h2>
 
-                                <dd class="product-page__property-value">
-                                    1,5 кг
-                                </dd>
-                            </div>
+                            <p class="product-page__description">
+                                «WildCore» — это рацион, соответствующий природным
+                                потребностям хищника. Мы не используем кукурузу,
+                                пшеницу и искусственные усилители вкуса.
+                                Каждая гранула покрыта натуральным гидролизатом
+                                печени, что обеспечивает высокую вкусовую
+                                привлекательность даже для привередливых кошек.
+                                Идеальный баланс кальция и фосфора для здоровья зубов.
+                            </p>
 
-                            <div class="product-page__property">
-                                <dt class="product-page__property-name">
-                                    Тип
-                                </dt>
-
-                                <dd class="product-page__property-value">
-                                    Сухой корм
-                                </dd>
-                            </div>
-
-                            <div class="product-page__property">
-                                <dt class="product-page__property-name">
-                                    Для кого
-                                </dt>
-
-                                <dd class="product-page__property-value">
-                                    Для кошек
-                                </dd>
-                            </div>
-
-                        </dl>
+                        </div>
 
 
                         <div class="product-page__actions">
+
+                            <button
+                                class="product-page__favorite-button"
+                                type="button"
+                                aria-label="Добавить в избранное"
+                            >
+                                ♥
+                            </button>
 
                             <button
                                 class="product-page__cart-button"
@@ -227,13 +192,16 @@
                                 Добавить в корзину
                             </button>
 
-                            <button
-                                class="product-page__favorite-button"
-                                type="button"
-                            >
-                                ♥ Добавить в избранное
-                            </button>
+                        </div>
 
+
+                        <div class="product-page__back-wrapper">
+                            <a
+                                class="product-page__back"
+                                href="./catalog.html"
+                            >
+                                Назад
+                            </a>
                         </div>
 
                     </div>
@@ -242,124 +210,6 @@
 
             </div>
         </section>
-
-
-        <section class="related-products">
-            <div class="container">
-
-                <h2 class="related-products__title">
-                    Похожие товары
-                </h2>
-
-
-                <div class="product-grid">
-
-                    <article class="product-card">
-
-                        <button
-                            class="product-card__favorite"
-                            type="button"
-                            aria-label="Добавить в избранное"
-                        >
-                            ♥
-                        </button>
-
-                        <img
-                            class="product-card__image"
-                            src="../assets/images/product-2.png"
-                            alt="Сухой корм"
-                        >
-
-                        <h3 class="product-card__title">
-                            Сухой корм
-                        </h3>
-
-                        <p class="product-card__price">
-                            1300 ₽
-                        </p>
-
-                        <a
-                            class="product-card__button"
-                            href="./product.html"
-                        >
-                            Подробнее
-                        </a>
-
-                    </article>
-
-
-                    <article class="product-card">
-
-                        <button
-                            class="product-card__favorite"
-                            type="button"
-                            aria-label="Добавить в избранное"
-                        >
-                            ♥
-                        </button>
-
-                        <img
-                            class="product-card__image"
-                            src="../assets/images/product-3.png"
-                            alt="Игрушка для питомца"
-                        >
-
-                        <h3 class="product-card__title">
-                            Игрушка для питомца
-                        </h3>
-
-                        <p class="product-card__price">
-                            700 ₽
-                        </p>
-
-                        <a
-                            class="product-card__button"
-                            href="./product.html"
-                        >
-                            Подробнее
-                        </a>
-
-                    </article>
-
-
-                    <article class="product-card">
-
-                        <button
-                            class="product-card__favorite"
-                            type="button"
-                            aria-label="Добавить в избранное"
-                        >
-                            ♥
-                        </button>
-
-                        <img
-                            class="product-card__image"
-                            src="../assets/images/product-4.png"
-                            alt="Лежанка для питомца"
-                        >
-
-                        <h3 class="product-card__title">
-                            Лежанка для питомца
-                        </h3>
-
-                        <p class="product-card__price">
-                            2000 ₽
-                        </p>
-
-                        <a
-                            class="product-card__button"
-                            href="./product.html"
-                        >
-                            Подробнее
-                        </a>
-
-                    </article>
-
-                </div>
-
-            </div>
-        </section>
-
     </main>
 
 

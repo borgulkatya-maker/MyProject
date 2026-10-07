@@ -1,30 +1,31 @@
 .hero {
   background-color: #f4ffe9;
-  padding: 32px 0;
+  padding: 40px 0;
 }
 
 .hero__inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 420px;
   align-items: center;
-  justify-content: space-between;
   gap: 48px;
 }
 
 .hero__content {
-  max-width: 480px;
+  max-width: 520px;
 }
 
 .hero__title {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   color: var(--color-brand);
-  font-size: 44px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: var(--font-weight-bold);
   line-height: 1.1;
 }
 
 .hero__description {
-  margin-bottom: 28px;
-  font-size: 18px;
+  margin-bottom: 24px;
+  color: var(--color-text-primary);
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -32,52 +33,72 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 22px;
+  padding: 12px 20px;
   border-radius: 24px;
   background-color: var(--color-brand);
   color: #ffffff;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: var(--font-weight-medium);
   text-decoration: none;
 }
 
+.hero__button:hover {
+  opacity: 0.9;
+}
+
 .hero__image-wrapper {
-  flex: 1;
-  max-width: 520px;
+  width: 100%;
+  max-width: 420px;
 }
 
 .hero__image {
   display: block;
   width: 100%;
-  height: auto;
-  border-radius: 20px;
+  height: 360px;
+  object-fit: contain;
 }
 
+
+/* Планшет */
+
 @media (max-width: 1024px) {
+  .hero {
+    padding: 36px 0;
+  }
+
   .hero__inner {
+    grid-template-columns: 1fr 340px;
     gap: 32px;
   }
 
-  .hero__title {
-    font-size: 36px;
+  .hero__content {
+    max-width: 460px;
   }
 
-  .hero__content {
-    max-width: 420px;
+  .hero__title {
+    font-size: 34px;
   }
 
   .hero__image-wrapper {
-    max-width: 420px;
+    max-width: 340px;
+  }
+
+  .hero__image {
+    height: 300px;
   }
 }
 
+
+/* Телефон */
+
 @media (max-width: 768px) {
   .hero {
-    padding: 24px 0;
+    padding: 28px 0;
   }
 
   .hero__inner {
-    flex-direction: column;
-    align-items: stretch;
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .hero__content {
@@ -85,14 +106,20 @@
   }
 
   .hero__title {
+    margin-bottom: 14px;
     font-size: 30px;
   }
 
   .hero__description {
-    font-size: 16px;
+    margin-bottom: 20px;
+    font-size: 15px;
   }
 
   .hero__image-wrapper {
     max-width: none;
+  }
+
+  .hero__image {
+    height: 260px;
   }
 }
